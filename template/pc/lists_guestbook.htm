@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>{$eyou.field.seo_title}</title> 
+  <meta name="renderer" content="webkit" /> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui" /> 
+  <meta name="description" content="{$eyou.field.seo_description}" /> 
+  <meta name="keywords" content="{$eyou.field.seo_keywords}" />
+  <link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+  {eyou:static file="skin/css/basic.css" /} 
+  {eyou:static file="skin/css/common.css" /}  
+  {eyou:static file="skin/css/widget.css" /}
+  <style>
+    body{background-position: center;background-repeat: no-repeat;background-color: ;font-family:;}
+  </style> 
+    <!--[if lte IE 9]>
+    {eyou:static file="skin/js/lteie9.js" /}
+    <![endif]--> 
+ </head> 
+ <!--[if lte IE 8]>
+    <div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+    <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span>×</span>
+    </button>
+    你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。</div>
+<![endif]--> 
+ <body> 
+<!--header-s-->
+    {eyou:include file="header.htm"/}
+<!--header-e-->
+  <section class="w-container bannerBox ">
+    <div class="banner" style="height: auto;"> <img src="{eyou:global name='web_attr_11' /}" alt="banner" title="" style=""  /> </div>
+  </section>
+  <section class="ey-crumbs hidden-sm-down" m-id="met_position" m-type="nocontent"> 
+   <div class="container"> 
+    <div class="row"> 
+     <div class="border-bottom clearfix"> 
+      <ol class="breadcrumb m-b-0 subcolumn-crumbs breadcrumb-arrow"> 
+       <li class="breadcrumb-item"> {eyou:position style="crumb" /} </li> 
+      </ol> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="ey-message animsition"> 
+   <div class="container"> 
+    <div class="row"> 
+     <div class="col-lg-8 col-md-8 ey-message-body panel panel-body m-b-0" boxmh-mh="" m-id="noset" m-type="message_list"> 
+      <img src="{eyou:global name='web_attr_23' /}" width="100%" />
+     </div> 
+     <div class="col-lg-4 col-md-4"> 
+      <div class="row"> 
+       <div class="ey-message-submit rightsidebar panel panel-body m-b-0" m-id="message_form" m-type="message_form" boxmh-h=""> 
+        {eyou:guestbookform type='default'}
+          <form method="POST" class="guest-form" enctype="multipart/form-data" action="{$field.action}" onsubmit="return checkForm();">
+              <div class="form-group">
+                <input class="guest-input form-control" id="attr_18" type="text" value="" name="{$field.attr_18}" placeholder="{eyou:lang name='xingming' /}">
+              </div>
+              <div class="form-group">
+                <input class="guest-input form-control" id="attr_20" type="text" value="" name="{$field.attr_20}" placeholder="{eyou:lang name='shouji' /}">
+              </div>
+              <div class="form-group">
+                <input class="guest-input form-control" id="attr_22" type="text" value="" name="{$field.attr_22}" placeholder="{eyou:lang name='youxiang' /}">
+              </div>
+              <div class="form-group">
+                <textarea class="guest-textarea form-control" id="attr_24" cols="40" rows="3" name="{$field.attr_24}" placeholder="{eyou:lang name='neirong' /}"></textarea>
+              </div>
+              <!-- <div class="form-group">
+                <select class="guest-input form-control" name="{$field.attr_7}" id="attr_7">
+                  <option value="无">无</option>
+                  {eyou:volist name='$field.options_7' id='vo'}
+                  <option value="{$vo.value}">{$vo.value}</option>
+                  {/eyou:volist}
+                </select>
+              </div> -->
+              <div class="div-guest-submit"><input type="submit" class="btn btn-primary btn-block btn-squared" value="{eyou:lang name='tijiao' /}"></div>
+              {$field.hidden}
+          </form>
+          <script type="text/javascript">
+            function checkForm()
+            {
+              if(document.getElementById('attr_18').value.length == 0)
+              {
+                alert('{$field.itemname_18}不能为空！');
+                return false;
+              }
+              if(document.getElementById('attr_20').value.length == 0)
+              {
+                alert('{$field.itemname_20}不能为空！');
+                return false;
+              }
+              
+              return true;
+            }
+          </script>
+        {/eyou:guestbookform}
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <!--footer-s-->
+  {eyou:include file="footer.htm" /}
+  <!--footer-e-->
+  {eyou:ui open='off' /}
+ </body>
+</html>

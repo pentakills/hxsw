@@ -1,0 +1,266 @@
+{eyou:channelartlist typeid='2'}
+    <div class="ey-index-news">
+        <div class="container">
+        <div class="col-lg-4 col-md-4 col-xs-12 eyou-edit" e-id="203" e-type="arclist">
+            <ul class="list-group">
+            {eyou:uiarclist e-id='203' typeid='10' e-page="index"}
+            {eyou:type empty='默认值'}
+            <li class="list-group-item active clearfix">
+                <h4 class="pull-xs-left m-y-0">{$field.typename}</h4>
+                <a href="{$field.typeurl}" class="pull-xs-right eyou-edit" e-id='2030' e-type='text'> {eyou:uitext e-id='2030' e-page="index" id="vo"}
+              {$vo.value}
+              {eyou:else /}
+              MORE
+              {/eyou:uitext} </a> </li>
+            {/eyou:type}
+            {eyou:arclist row='5' titlelen='30' infolen='160'}
+            <li class="list-group-item news-li clearfix"> <span>{$field.add_time|MyDate='Y-m-d',###}</span> <a href="{$field.arcurl}" title="{$field.title}" target="_self"> {$field.title} </a> </li>
+            {/eyou:arclist} 
+            {/eyou:uiarclist}
+          </ul>
+          </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 eyou-edit" e-id="204" e-type="arclist">
+            <ul class="list-group">
+            {eyou:uiarclist e-id='204' typeid='11' e-page="index"}
+            {eyou:type empty='默认值'}
+            <li class="list-group-item active clearfix">
+                <h4 class="pull-xs-left m-y-0">{$field.typename}</h4>
+                <a href="{$field.typeurl}" class="pull-xs-right eyou-edit" e-id='2040' e-type='text'> {eyou:uitext e-id='2040' e-page="index" id="vo"}
+              {$vo.value}
+              {eyou:else /}
+              MORE
+              {/eyou:uitext} </a> </li>
+            {/eyou:type}
+            {eyou:arclist row='5' titlelen='30' infolen='160'}
+            <li class="list-group-item news-li clearfix"> <span>{$field.add_time|MyDate='Y-m-d',###}</span> <a href="{$field.arcurl}" title="{$field.title}" target="_self"> {$field.title} </a> </li>
+            {/eyou:arclist} 
+            {/eyou:uiarclist}
+          </ul>
+          </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 eyou-edit" e-id="205" e-type="arclist">
+            <ul class="list-group">
+            {eyou:uiarclist e-id='205' typeid='12' e-page="index"}
+            {eyou:type empty='默认值'}
+            <li class="list-group-item active clearfix">
+                <h4 class="pull-xs-left m-y-0">{$field.typename}</h4>
+                <a href="{$field.typeurl}" class="pull-xs-right eyou-edit" e-id='2050' e-type='text'> {eyou:uitext e-id='2050' e-page="index" id="vo"}
+              {$vo.value}
+              {eyou:else /}
+              MORE
+              {/eyou:uitext} </a> </li>
+            {/eyou:type}
+            {eyou:arclist row='5' titlelen='30' infolen='160'}
+            <li class="list-group-item news-li clearfix"> <span>{$field.add_time|MyDate='Y-m-d',###}</span> <a href="{$field.arcurl}" title="{$field.title}" target="_self"> {$field.title} </a> </li>
+            {/eyou:arclist} 
+            {/eyou:uiarclist}
+          </ul>
+          </div>
+      </div>
+      </div>
+      {/eyou:channelartlist}
+      
+
+
+
+
+<div class="in_new_bg">
+  <div class="warp slide1">
+    <div class="in_new">
+      <div class="hd"> <span class="new_more"><a href="{eyou:type typeid='10'}{$field.typeurl}{/eyou:type}">更多+</a></span>
+        <ul>
+          {eyou:type typeid='10'}
+          <li class="on">{$field.typename}</li>
+          {/eyou:type}
+          <span>|</span>
+          {eyou:type typeid='11'}
+          <li class="on">{$field.typename}</li>
+          {/eyou:type}
+        </ul>
+      </div>
+      <div class="bd">
+        <div style="display:block;">
+          {eyou:arclist titlelen='40' limit='0,1' typeid='10' infolen='60'} 
+              <div style="float: left;width: 484px;"> <a href="{$field.arcurl}"> <img src="{$field.litpic}" width="484" height="263">
+           <ul class="new_list">
+           <li>
+              <div class="time_box">
+                <p class="time_day">{$field.add_time|MyDate='d',###}</p>
+                <p class="time_ny">{$field.add_time|MyDate='Y.m',###}</p>
+              </div>
+              <div class="new_con_box">
+                <p class="n1"><a href="{$field.arcurl}">{$field.title}</a></p>
+                <p>{$field.seo_description}...</p>
+              </div>
+            </li>
+            </ul>
+    </a> </div>
+            {/eyou:arclist}
+            <div style="float: right;width: 484px;">
+          <ul class="new_list" style="">
+          {eyou:arclist titlelen='40' limit='1,4' typeid='10' infolen='60'}    
+            <li>
+              <div class="time_box">
+                <p class="time_day">{$field.add_time|MyDate='d',###}</p>
+                <p class="time_ny">{$field.add_time|MyDate='Y.m',###}</p>
+              </div>
+              <div class="new_con_box">
+                <p class="n1"><a href="{$field.arcurl}">{$field.title}</a></p>
+                <p>{$field.seo_description}...</p>
+              </div>
+            </li>
+            {/eyou:arclist}
+          </ul>
+          </div>
+        </div>
+        <div style="display:none;">
+        	{eyou:arclist titlelen='40' limit='0,1' typeid='11' infolen='60'} 
+              <div style="float: left;width: 484px;"> <a href="{$field.arcurl}"> <img src="{$field.litpic}" width="484" height="263">
+    <ul class="new_list">
+           <li>
+              <div class="time_box">
+                <p class="time_day">{$field.add_time|MyDate='d',###}</p>
+                <p class="time_ny">{$field.add_time|MyDate='Y.m',###}</p>
+              </div>
+              <div class="new_con_box">
+                <p class="n1"><a href="{$field.arcurl}">{$field.title}</a></p>
+                <p>{$field.seo_description}...</p>
+              </div>
+            </li>
+            </ul>
+    </a> </div>
+            {/eyou:arclist}
+          <ul class="new_list" style="float: right;">
+            {eyou:arclist titlelen='40' limit='1,4' typeid='11' infolen='60'}    
+            <li>
+              <div class="time_box">
+                <p class="time_day">{$field.add_time|MyDate='d',###}</p>
+                <p class="time_ny">{$field.add_time|MyDate='Y.m',###}</p>
+              </div>
+              <div class="new_con_box">
+                <p class="n1"><a href="{$field.arcurl}">{$field.title}</a></p>
+                <p>{$field.seo_description}...</p>
+              </div>
+            </li>
+            {/eyou:arclist}
+          </ul>
+        </div>
+      </div>
+      <script type="text/javascript">jQuery(".in_new").slide({effect:"fade"});</script> 
+    </div>
+   </div> 
+  </div>
+  
+
+
+
+
+<!--产品中心-->
+	{eyou:channelartlist typeid='3'}
+      <section class="service_list_met_11_3 text-xs-center">
+        <div class="container">
+        	<div class="head" style="text-align: center;">
+            <h2 class="title newpro">{eyou:field name='typename' /}</h2>
+            <p class="desc newpro" style="margin: 0 auto;"></p>
+          </div>
+        <div class="title-box clearfix" style="border-bottom: 1px solid #ccc;">
+            
+            <ul class="tabs ulstyle" style="float: left;">
+            <li class="active newpro"> <a href="javascript:void(0);" onClick="tabspro(this);" data-typeid="{eyou:field name='typeid' /}" data-url="{eyou:field name='typeurl' /}" title="{eyou:field name='typename' /}">
+              <h3>推荐产品</h3>
+              </a> </li>
+            {eyou:channel row="100" type ='son'}
+            <li class="newpro">
+              <a href="javascript:void(0);" onClick="tabspro(this);" data-typeid="{$field.typeid}" data-url="{$field.typeurl}" title="{$field.typename}">
+                <h3>{$field.typename}</h3>
+              </a>
+            </li>
+            {/eyou:channel} 
+          </ul>
+          <ul class="tabs ulstyle">
+            <li class="active newpro"> <a href="{eyou:field name='typeurl' /}" onClick="tabspro(this);" data-typeid="{eyou:field name='typeid' /}" data-url="{eyou:field name='typeurl' /}" title="{eyou:field name='typename' /}">
+              <h3>MORE+ </h3>
+              </a> </li>
+            <!--{eyou:channel row="100" type ='son'}
+            <li class="newpro">
+              <a href="javascript:void(0);" onClick="tabspro(this);" data-typeid="{$field.typeid}" data-url="{$field.typeurl}" title="{$field.typename}">
+                <h3>{$field.typename}</h3>
+              </a>
+            </li>
+            {/eyou:channel} -->
+          </ul>
+        </div>
+        <ul class="list m-0 clearfix ulstyle tabspro" id="pro_{eyou:field name='typeid' /}">
+          {eyou:arclist row='8' titlelen='20' infolen='22' flag='c'}
+            <li class="item col-xs-12 col-md-6 col-lg-41 col-xxl-31 newpro">
+            <div class="content"> <a href="{$field.arcurl}" title="{$field.title}" target="_self"> <img data-original="{$field.litpic}" alt="{$field.title}" src="{$field.litpic}" style="display: inline;">
+              <div class="txt">
+              	<h4>{$field.title}</h4>
+              <span class="more">MORE</span>
+              </div>
+              </a> </div>
+          </li>
+          {/eyou:arclist}
+        </ul>
+        {eyou:channel row="100" type='son' id='field'}
+        <ul class="list m-0 clearfix ulstyle tabspro" style="display: none;" id="pro_{$field.typeid}">
+          {eyou:arclist typeid='$field.typeid' row='8' titlelen='20' infolen='22' id='field2'}
+            <li class="item col-xs-12 col-md-6 col-lg-41 col-xxl-31 newpro">
+            <div class="content"> <a href="{$field2.arcurl}" title="{$field2.title}" target="_self"> <img data-original="{$field2.litpic}" alt="{$field2.title}" src="{$field2.litpic}" style="display: inline;">
+              <div class="txt">
+              	<h4>{$field.title}</h4>
+              <span class="more">MORE</span>
+              </div>
+              </a> </div>
+          </li>
+          {/eyou:arclist}
+        </ul>
+        {/eyou:channel}
+        <a id="tabspro_more" href="{eyou:field name='typeurl' /}" title="{eyou:field name='typename' /}" class="btn-more">{eyou:lang name='yybl3' /}<i class="fa fa-angle-right"></i> </a> </div>
+      </section>
+    {/eyou:channelartlist}
+    <!--关于我们-->
+    {eyou:channelartlist typeid='8'}
+    <section class="about_list_met_11_3">
+      <div class="background">
+        <div style="height: 500px;" class="eyou-edit" e-id="206" e-type="upload">
+        {eyou:uiupload e-id='206' e-page="index"}
+          {$field.value}
+        {eyou:else /}
+          <img style="display: inline;" src="{eyou:global name='web_templets_pc' /}/skin/images/aboutpic.jpg" class="">
+        {/eyou:uiupload}
+        </div>
+      </div>
+      <div class="container">
+      	<div class="head" style="text-align: center;">
+            <h2 class="title newpro">{eyou:field name='typename' /}</h2>
+            <p class="desc newpro" style="margin: 0 auto;"></p>
+          </div>
+        <div class="about-us col-md-12">
+          
+          <div class="content">
+            <div class="left col-md-5 col-sm-5">
+              <div class="img eyou-edit" e-id="208" e-type="upload">
+                {eyou:uiupload e-id='208' e-page="index"}
+                  {$field.value}
+                {eyou:else /}
+                  <img style="display: inline;" src="{eyou:global name='web_templets_pc' /}/skin/images/1516784706.jpg" class="">
+                {/eyou:uiupload}
+              </div>
+            </div>
+            <div class="right">
+              <div class="text" style="visibility: inherit; opacity: 1;">
+                <p class="desc newpro">
+               <span>
+                {eyou:type addtable='single_content'}
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$field.content|html_msubstr=###,0,225}...
+                {/eyou:type}
+               </span>
+                <a href="{eyou:field name='typeurl' /}" title="{eyou:field name='typename' /}" class="btn-more" target="_blank">{eyou:lang name='yybl3' /}<i class="fa fa-angle-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/eyou:channelartlist}

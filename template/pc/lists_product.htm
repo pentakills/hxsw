@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>{$eyou.field.seo_title}</title> 
+  <meta name="renderer" content="webkit" /> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui" /> 
+  <meta name="description" content="{$eyou.field.seo_description}" /> 
+  <meta name="keywords" content="{$eyou.field.seo_keywords}" />
+  <link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+  {eyou:static file="skin/js/jquery-1.10.1.min.js" /}
+{eyou:static file="skin/js/state.js" /}
+{eyou:static file="skin/css/bootstrap.min.css" /}
+{eyou:static file="skin/css/style1.css" /}
+{eyou:static file="skin/js/slick.min.js" /}
+
+  {eyou:static file="skin/css/basic.css" /} 
+  {eyou:static file="skin/css/common.css" /}
+  {eyou:static file="skin/css/global.css" /}  
+  {eyou:static file="skin/css/widget.css" /} 
+  {eyou:static file="skin/css/theme.css" /}
+  {eyou:static file="skin/css/color_0.css" /}
+  {eyou:static file="skin/css/style.css" /}  
+    <!--[if lte IE 9]>
+    {eyou:static file="skin/js/lteie9.js" /}
+    <![endif]--> 
+ </head> 
+ <!--[if lte IE 8]>
+    <div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+    <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span>×</span>
+    </button>
+    你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。</div>
+<![endif]--> 
+ <body> 
+<!--header-s-->
+    {eyou:include file="header.htm"/}
+<!--header-e-->
+<section class="w-container bannerBox ">
+    <div class="banner" style="height: auto;"> <img src="{eyou:global name='web_attr_11' /}" alt="banner" title="" style=""  /> </div>
+  </section>
+    <div id="page">
+    <div class="container">
+      {eyou:include file="left.htm" /}
+      <div class="pageInfo">
+        <div class="content">
+          {eyou:include file="position.htm" /}
+          <div class="product pageIntro">
+            <div class="proCenImgs">
+              <div class="row">
+              {eyou:list titlelen='20' pagesize='6'}
+                <div class="proimg col-lg-4 col-md-4 col-sm-4 col-xs-6"> <a href="{$field.arcurl}"> <img src="{$field.litpic}" alt="{$field.title}"> <span>{$field.title}</span>
+                  <!--<div class="layer hidden-xs">
+                    <div class="title tc">
+                      <h3>{$field.title}</h3>
+                    </div>
+                    <div class="intro">
+                      <p> {$field.seo_description|html_msubstr=###,0,20,true}</p>
+                    </div>
+                  </div>-->
+                  </a> </div>
+                {/eyou:list}  
+              </div>
+            </div>
+            <div class="paginationBox tc">
+              <dd>
+              {eyou:pagelist listitem='index,pre,pageno,next,end' listsize='2' /}
+              </dd>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!--footer-s-->
+  <footer class="ey-foot-info p-y-20 border-top1" e-page="footer"> 
+   <div class="langcss text-xs-center1 p-b-20"> 
+    <div class="container"> 
+     <div class="row mob-masonry" style="border-bottom: 1px solid #666666;"> 
+      <div class="col-lg-2 col-md-3 col-xs-6 list masonry-item foot-nav eyou-edit" e-id="301" e-type="channel" id="testtest"> 
+      {eyou:uichannel e-id="301" typeid="1" e-page="footer"}
+        {eyou:type id="field"}
+       <h4 class="font-size-16 m-t-0"> <a href="{$field.typeurl}" target="_self" title="{$field.typename}">{$field.typename}</a> </h4>
+        {/eyou:type}
+       <ul class="ulstyle m-b-0"> 
+        {eyou:channel type="son" row="3"}
+        <li> <a href="{$field.typeurl}" target="_self" title="{$field.typename}">{$field.typename}</a> </li> 
+        {/eyou:channel}
+       </ul> 
+      {/eyou:uichannel}
+      </div> 
+      <div class="col-lg-2 col-md-3 col-xs-6 list masonry-item foot-nav eyou-edit" e-id="302" e-type="channel"> 
+      {eyou:uichannel e-id="302" typeid="2" e-page="footer"}
+        {eyou:type id="field"}
+        <h4 class="font-size-16 m-t-0"> <a href="{$field.typeurl}" target="_self" title="{$field.typename}">{$field.typename}</a> </h4>
+        {/eyou:type}
+       <ul class="ulstyle m-b-0"> 
+        {eyou:channel type="son" row="3"}
+        <li> <a href="{$field.typeurl}" target="_self" title="{$field.typename}">{$field.typename}</a> </li> 
+        {/eyou:channel}
+       </ul> 
+      {/eyou:uichannel}
+      </div> 
+      <div class="col-lg-2 col-md-3 col-xs-6 list masonry-item foot-nav eyou-edit" e-id="303" e-type="channel"> 
+      {eyou:uichannel e-id="303" typeid="3" e-page="footer"}
+        {eyou:type id="field"}
+       <h4 class="font-size-16 m-t-0"> <a href="{$field.typeurl}" title="{$field.typename}">{$field.typename}</a> </h4> 
+        {/eyou:type}
+       <ul class="ulstyle m-b-0"> 
+        {eyou:channel type="son" row="3"}
+        <li> <a href="{$field.typeurl}" title="{$field.typename}">{$field.typename}</a> </li> 
+        {/eyou:channel}
+       </ul> 
+      {/eyou:uichannel}
+      </div> 
+      <div class="col-lg-3 col-md-12 col-xs-12 info masonry-item font-size-20" m-id="met_contact" m-type="nocontent"> 
+       <p class="font-size-26"><!--<a href="javascript:void(0);" title="" class="eyou-edit" e-id="304" e-type="text">-->
+        {eyou:uitext e-id='304' e-page="footer"}
+          {$field.value}
+        {eyou:else /}
+          {eyou:lang name='yybl4' /}
+        {/eyou:uitext}
+        <!--</a>--></p> 
+       <p class="eyou-edit" e-id="web_attr_2" e-type="text" style="font-size: 16px;">
+        {eyou:uitext e-id='web_attr_2' e-page="footer"}
+          {$field.value}
+        {eyou:else /}
+        电话：{eyou:global name='web_attr_2' /}<br />
+          邮箱：{eyou:global name='web_attr_3' /}
+        {/eyou:uitext}
+       </p> 
+       
+      </div> 
+      <div class="col-lg-3 col-md-12 col-xs-12 info masonry-item font-size-20" m-id="met_contact" m-type="nocontent"> 
+       
+       {notempty name="$eyou.global.web_attr_4"}
+        <img src="{eyou:global name='web_attr_4' /}"  width="100" height="100"/> 
+        <p style="font-size: 14px; color: #fff;">扫一扫关注我们</p>
+       {/notempty}
+      </div>
+     </div> 
+    </div> 
+   </div> 
+   <div class="copy p-y-10 border-top1"> 
+    <div class="container text-xs-center1"> 
+     <p style="font-size: 12px;">
+      {eyou:flink type='all' titlelen='15'}
+      <a href='{$field.url}' {$field.target}>{$field.title}</a>
+      {/eyou:flink}
+     </p>
+    </div>
+    <div class="container text-xs-center1"> 
+     <p class="eyou-edit" e-id="web_copyright" e-type="text" style="font-size: 12px;">
+        {eyou:uitext e-id='web_copyright' e-page="footer"}
+          {$field.value}
+        {eyou:else /}
+          {$global.web_copyright|htmlspecialchars_decode}--SEO技术支持：<a href="http://www.0917bjms.com/">麦思科技</a>&nbsp;&nbsp;{eyou:global name='web_recordnum' /}
+        {/eyou:uitext}
+     </p>
+     <!--<p>
+        {eyou:global name='web_recordnum' /}
+     </p>-->
+     <!--<p>
+        {eyou:global name='web_recordnum' /}<a href="http://wljg.snaic.gov.cn/"><img src="{eyou:global name='web_attr_11' /}" width="25" /></a>
+     </p>-->
+     <!--<button type="button" class="btn btn-outline btn-default btn-squared btn-lang" id="btn-convert" m-id="lang" m-type="lang">繁體</button> -->
+    </div> 
+   </div>  
+   {eyou:global name='web_thirdcode_pc' /}
+  </footer>
+<script>
+  <!--footer-e-->
+  {eyou:ui open='off' /}
+ </body>
+</html>

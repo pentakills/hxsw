@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>{$eyou.field.seo_title}</title> 
+  <meta name="renderer" content="webkit" /> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui" /> 
+  <meta name="description" content="{$eyou.field.seo_description}" /> 
+  <meta name="keywords" content="{$eyou.field.seo_keywords}" /> 
+  <link href="{eyou:global name='web_cmspath' /}/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+  {eyou:static file="skin/css/basic.css" /} 
+  {eyou:static file="skin/css/common.css" /} 
+  {eyou:static file="skin/css/global.css" /}  
+  {eyou:static file="skin/css/widget.css" /} 
+  {eyou:static file="skin/css/theme.css" /}
+  {eyou:static file="skin/css/color_0.css" /}
+  {eyou:static file="skin/css/style.css" /} 
+  <style>
+    body{background-position: center;background-repeat: no-repeat;background-color: ;font-family:;}
+  </style> 
+    <!--[if lte IE 9]>
+    {eyou:static file="skin/js/lteie9.js" /}
+    <![endif]--> 
+ </head> 
+ <!--[if lte IE 8]>
+    <div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+    <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span>×</span>
+    </button>
+    你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。</div>
+<![endif]--> 
+ <body> 
+<!--header-s-->
+    {eyou:include file="header.htm"/}
+<!--header-e-->
+<section class="w-container bannerBox ">
+    <div class="banner" style="height: auto;"> <img src="{eyou:global name='web_attr_11' /}" alt="banner" title="" style=""  /> </div>
+  </section>
+  <section class="ey-crumbs hidden-sm-down" m-id="met_position" m-type="nocontent"> 
+   <div class="container"> 
+    <div class="row"> 
+     <div class="border-bottom clearfix"> 
+      <ol class="breadcrumb m-b-0 subcolumn-crumbs breadcrumb-arrow"> 
+       <li class="breadcrumb-item"> {eyou:position style="crumb" /} </li> 
+      </ol> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <div class="w-container w-main">
+    <div class="w-section ">
+      <div class="row" >
+        <div class="row-mask" ></div>
+        <div class="wrap-content-in">
+          <div class="li-div col-li-div">
+            <div class="col-table">
+              <table class="div-table div-table-first" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                  <tr>
+                    <td class="td-w" width="22.15447154471545%"><div class="div-padding">
+                        <div class="li-div" >
+                          <div class="w-space space-b noChoose"  style="height:20px;">
+                            <div class="stretch-b"></div>
+                          </div>
+                        </div>
+                        <div class="li-div">
+                        	
+                          <div class=""  style=""> 
+                            <div class="w-com-menu w-com-menu-V">
+                              <div class="w-com-menu-in">
+                                <div class="systitle">
+                                  <div class="systitle-in">{$eyou.field.typeid|gettoptype=###,'typename'}</div>
+                                  <i class="fa icon_menuControl"></i> </div>
+                                <ul class="ul-parent">
+                                  {eyou:channel type="first" id='field' currentstyle="cur"}
+                                  <li class="li-parent">
+                                    <div class="div-parent"> 
+                                    	<a class="{$field.currentstyle}"  href="{$field.typeurl}" >{$field.typename}</a> <span class="menu_simpline_cur"></span> 
+                                    </div>
+                                  </li>
+                                  {/eyou:channel}
+                                  <!--{eyou:channel type='first' id='field' currentstyle='on'} <span> <a class="{$field.currentstyle}" href="{$field.typeurl}">{$field.typename}</a> </span> {/eyou:channel}-->
+                                </ul>			
+                              </div>
+							  <!-- 左边联系我们-->
+							  <div class="contact_left">
+							    <img src="template/pc/skin/images/c.jpg" alt=""/>
+							    <ul>
+							      <li>{eyou:lang name='dizhi' /}： {eyou:global name="web_attr_1"}</li>
+							      <li>{eyou:lang name='youxiang' /}：{eyou:global name="web_attr_3"}</li>
+							      <li>{eyou:lang name='shouji' /}： {eyou:global name="web_attr_2"}</li>
+								  <li>{eyou:lang name='zuoji' /}：{eyou:global name='web_attr_39' /}</li>
+							      <li>{eyou:lang name='lianxiren' /}：{eyou:global name='web_attr_37' /}</li>
+							    </ul>
+							  </div>
+							  <!-- 左边联系我们-->
+                            </div>
+                             </div>
+                        </div>
+                      </div></td>
+                    <td class="td-w" width="77.872627072218%"><div class="div-padding">
+                        <div class="li-div">
+                          <div class="w-title w-title5 lineborder"  style="">
+                            <div class="w-title-in">
+                              <div class="w-title-inner">
+                                <div class="title-h-in">
+                                  <h2 class="border_colorbottom_main" style="font-size: 28px;border-bottom: 1px dashed #eee;padding-bottom: 5px;margin-bottom: 25px;">{$eyou.field.typename}</h2>
+                                  <span style="">{$eyou.field.englist_name}</span> </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="li-div">
+                          <div class="w-text"  style=""> {$eyou.field.content} </div>
+                        </div>
+                      </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="li-div">
+            <div class="w-space space-b noChoose"  style="height:40px;">
+              <div class="stretch-b"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   
+   
+  <!--footer-s-->
+  {eyou:include file="footer.htm" /}
+  <!--footer-e-->
+  {eyou:ui open='off' /}
+ </body>
+</html>

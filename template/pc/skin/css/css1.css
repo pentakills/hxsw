@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* eyoucms.com 易优CMS -- 好用,免费,安全 */
+/* CSS Document */
+body{margin:0 auto; padding:0; font-family:"微软雅黑",Tahoma,Arial,Helvetica,sans-serif; color:#333; background:url(../img/body_bg.jpg) center top repeat;}
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,pre{margin:0;padding:0;}
+h1,h2,h3,h4{font-size:14px; font-family:"微软雅黑",Tahoma,Arial;}
+a{text-decoration:none; color:#333;}
+a:hover{ text-decoration:underline;}
+img{ border:0 none; vertical-align:top;}
+ul li{list-style:none;}
+.c{clear:both; overflow:hidden; zoom:1;}
+.center{ text-align:center;}
+.fl{ float:left;}
+.fr{ float:right;}
+.warp{width:1000px; margin:0 auto; clear:both;}
+.mt20{ margin-top:20px;}
+
+
+/*创网资讯*/
+.in_new_bg{ /*background:url(../img/bg02.jpg) top center no-repeat #0656ab;*/ height:446px; overflow:hidden; clear:both; padding-top:40px;}
+.new_more{ float:right; display:inline; margin-right:5px; margin-top:3px;}
+.new_more a{ color:#333;}
+.in_new{ width:1000px; float:left; display:inline; color:#FFF;}
+.slide1{ clear:both; overflow:hidden;}
+.slide1 .hd{height:47px; line-height:47px; clear:both; overflow:hidden;}
+.slide1 .hd ul li{float:left; display:inline; height:47px; line-height:47px; font-size:18px; cursor:pointer; margin-right:15px; color:#333;}
+.slide1 .hd ul span{ float:left; display:inline; color:#FFF; margin-right:15px;}
+.slide1 .hd ul li.on{color:#86befa;}
+.slide1 .bd{clear:both; overflow:hidden;}
+.new_list{}
+.new_list li{ height:77px; padding:20px 0; border-bottom:#666 dashed 1px; overflow:hidden; clear:both;}
+.time_box{ border:#666 solid 1px; height:75px; width:68px; overflow:hidden; float:left; display:inline; text-align:center; margin-left:5px;}
+.time_day{ font-size:32px; color:#333; height:51px; line-height:51px; overflow:hidden;}
+.time_ny{ font-size:14px; color:#FFF; height:24px; line-height:24px; overflow:hidden; background:#666;}
+.new_con_box{height:77px; width:385px; overflow:hidden; float:right; display:inline; color:#666; font-size:12px; line-height:22px;}
+.new_con_box p.n1{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.new_con_box a{ color:#333; font-size:16px; line-height:34px;}
+.new_list li:hover a{ color:#00b80f; display:block; text-decoration:none;}
+.new_list li:hover .time_box{border:#00b80f solid 1px;}
+.new_list li:hover .time_day{color:#00b80f;}
+.new_list li:hover .time_ny{ background:#00b80f; color:#FFF;}
+.new_list li:hover .new_con_box{ color:#00b80f;}
+/*活动*/
+
+
+/*新闻列表*/
+.news{ clear:both; overflow:hidden;}
+.news li{ height:77px; padding:20px 15px; border-bottom:#ccc dashed 1px; overflow:hidden; clear:both;}
+.page_time_box{ border:#1f53a9 solid 1px; height:75px; width:68px; overflow:hidden; float:left; display:inline; text-align:center; margin-left:5px;}
+.page_time_day{ font-size:32px; height:51px; line-height:51px; overflow:hidden; color:#1f53a9;}
+.page_time_ny{ font-size:14px; color:#FFF; height:24px; line-height:24px; overflow:hidden; background:#1f53a9;}
+.page_new_con{height:77px; width:606px; color:#787878; overflow:hidden; float:right; display:inline; font-size:12px; line-height:22px;}
+.page_new_con a{ font-size:16px; line-height:32px;}
+.news li:hover a{ color:#fd8a1d; display:block; text-decoration:none;}
+.news li:hover .page_time_box{border:#fd8a1d solid 1px;}
+.news li:hover .page_time_day{color:#fd8a1d;}
+.news li:hover .page_time_ny{ background:#fd8a1d; color:#FFF;}
+.news li:hover .page_new_con{ color:#fdb22d;}
+
+
+
+
+
+
+
+

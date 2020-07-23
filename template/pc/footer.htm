@@ -1,0 +1,66 @@
+  <footer class="ey-foot-info p-y-20 border-top1" e-page="footer"> 
+   <div class="langcss text-xs-center1 p-b-20"> 
+    <div class="container"> 
+     <div class="row mob-masonry" style="border-bottom: 1px solid #fff;"> 
+     
+     
+      
+      <div style="text-align: left;"  class="col-lg-8 col-md-12 col-xs-12 info masonry-item font-size-20 " m-id="met_contact" m-type="nocontent"> 
+       <p class="font-size-20 " >
+				{eyou:global name='web_name' /}
+        </p> 
+       <p class="eyou-edit" e-id="web_attr_2" e-type="text" style="font-size: 16px;">
+     {eyou:global name='web_attr_35' /}
+       </p> 
+       
+      </div> 
+      <div style="float: right;" class="col-lg-2 col-md-12 col-xs-12 info masonry-item font-size-20 fr" m-id="met_contact" m-type="nocontent"> 
+       
+       {notempty name="$eyou.global.web_attr_4"}
+        <img src="{eyou:global name='web_attr_4' /}"  width="100" height="100"/> 
+        <p style="font-size: 14px; color: #fff;">{eyou:lang name='saoyisao' /}</p>
+       {/notempty}
+      </div>
+     </div> 
+    </div> 
+   </div> 
+   <div class="copy p-y-10 border-top1"> 
+    <!-- <div class="container text-xs-center1"> 
+     <p style="font-size: 12px;">
+      {eyou:flink type='all' titlelen='15'}
+      <a href='{$field.url}' {$field.target}>{$field.title}</a>
+      {/eyou:flink}
+     </p>
+    </div> -->
+    <div class="container text-xs-center1"> 
+     <p class="eyou-edit" e-id="web_copyright" e-type="text" style="font-size: 12px;">
+        {eyou:uitext e-id='web_copyright' e-page="footer"}
+          {$field.value}
+        {eyou:else /}
+          {$global.web_copyright|htmlspecialchars_decode}--SEO技术支持：<a href="http://www.0917bjms.com/">麦思科技</a>&nbsp;&nbsp;{eyou:global name='web_recordnum' /}
+        {/eyou:uitext}
+     </p>
+    </div> 
+   </div>  
+   {eyou:global name='web_thirdcode_pc' /}
+  </footer>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  <input type="hidden" name="met_lazyloadbg" value="{eyou:global name='web_templets_pc' /}/skin/images/loading.gif" /> 
+  {eyou:static file="skin/js/jquery.min.js" /}
+  {eyou:static file="skin/js/common.js" /}
+  <!-- 应用插件标签 start -->
+  {eyou:weapp type='default' /}
+  <!-- 应用插件标签 end -->
